@@ -1,11 +1,21 @@
 Source: vyatta-snmp-vrf-agent
 Section: net
 Priority: optional
-Build-Depends: debhelper (>= 9.20160709), autoconf, autotools-dev, debianutils (>=1.13.1),
+Build-Depends: debhelper-compat (= 13),
+ autoconf,
+ debianutils (>=1.13.1),
  dh-autoreconf,
- bvnos-linux-libc-dev, libsnmp-dev (>= 5.7.3+dfsg-2+vyatta5), libsnmp-dev (<< 5.8), libsnmp-dev-vyatta, libvrfmanager-vyatta-dev, pkg-config
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Standards-Version: 3.9.8
+ linux-libc-dev,
+ libsnmp-dev (>= 5.7.3+dfsg-2+vyatta5),
+ libsnmp-dev (<< 5.8),
+ libsnmp-dev-vyatta,
+ libvrfmanager-vyatta-dev,
+ pkg-config
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/vyatta-snmp-vrf-agent.git
+Vcs-Browser: https://github.com/nudanos/vyatta-snmp-vrf-agent
 
 Package: vyatta-snmp-vrf-agent
 Architecture: any

@@ -1,3 +1,9 @@
+vyatta-snmp-vrf-agent (1.15) trixie; urgency=medium
+
+  * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Mon, 28 Sep 2026 23:09:30 -0700
+
 vyatta-snmp-vrf-agent (1.14) unstable; urgency=medium
 
   [ Nicholas Brown ]
