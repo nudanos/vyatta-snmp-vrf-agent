@@ -6,9 +6,7 @@ Build-Depends: debhelper-compat (= 13),
  debianutils (>=1.13.1),
  dh-autoreconf,
  linux-libc-dev,
- libsnmp-dev (>= 5.7.3+dfsg-2+vyatta5),
- libsnmp-dev (<< 5.8),
- libsnmp-dev-vyatta,
+ libsnmp-dev (>= 5.9.5.2+dfsg-3nudanos1),
  libvrfmanager-vyatta-dev,
  pkg-config
 Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
