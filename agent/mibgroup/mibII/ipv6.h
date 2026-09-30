@@ -13,9 +13,9 @@ struct ip6_mib {
 };
 #endif
 
-config_require(mibII/ifTable mibII/at mibII/var_route mibII/route_write)
-config_add_mib(IPV6-ICMP-MIB:IPV6-MIB:IPV6-TCP-MIB:IPV6-UDP-MIB)
-config_arch_require(solaris2, kernel_sunos5)
+config_require(mibII/ifTable mibII/at mibII/var_route mibII/route_write);
+config_add_mib(IPV6-ICMP-MIB:IPV6-MIB:IPV6-TCP-MIB:IPV6-UDP-MIB);
+config_arch_require(solaris2, kernel_sunos5);
 #include "var_route.h"
 #include "route_write.h"
 extern void     init_ipv6(void);

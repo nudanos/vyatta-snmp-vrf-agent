@@ -6,7 +6,7 @@
 #ifndef _MIBGROUP_AT_H
 #define _MIBGROUP_AT_H
 
-config_arch_require(solaris2, kernel_sunos5)
+config_arch_require(solaris2, kernel_sunos5);
 
      extern void     init_at(void);
      extern FindVarMethod var_atEntry;
