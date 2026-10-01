@@ -1,0 +1,11 @@
+name: package
+on:
+  push:
+    branches: [trixie]
+  pull_request:
+    branches: [trixie]
+jobs:
+  build:
+    uses: nudanos/distro/.github/workflows/package.yml@main
+    with:
+      package: vyatta-snmp-vrf-agent
