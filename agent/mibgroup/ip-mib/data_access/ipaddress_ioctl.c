@@ -26,7 +26,7 @@
 
 #include "ipaddress_ioctl.h"
 
-netsnmp_feature_child_of(ipadress_ioctl_entry_copy, ipaddress_common)
+netsnmp_feature_child_of(ipadress_ioctl_entry_copy, ipaddress_common);
 
 static void _print_flags(short flags);
 extern void netsnmp_arch_interface_get_vrf(const char *name, char *vrf);

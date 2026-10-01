@@ -66,7 +66,7 @@ PERFORMANCE OF THIS SOFTWARE.
 #include "util_funcs.h"
 #include "vrf_helpers.h"
 
-netsnmp_feature_child_of(get_routes, libnetsnmpmibs)
+netsnmp_feature_child_of(get_routes, libnetsnmpmibs);
 
 #ifndef  MIN
 #define  MIN(a,b)                     (((a) < (b)) ? (a) : (b))
@@ -952,7 +952,7 @@ load_rtentries(struct radix_node *pt)
             string_append_int(cp, ifnet.if_unit);
 #endif
 #ifdef NETSNMP_FEATURE_CHECKIN
-            netsnmp_feature_require(interface_legacy)
+            netsnmp_feature_require(interface_legacy);
 #endif /* NETSNMP_FEATURE_CHECKIN */
             Interface_Scan_Init();
             rt.rt_unit = 0;
@@ -1106,7 +1106,7 @@ Route_Scan_Reload(void)
 #ifdef NETSNMP_FEATURE_CHECKIN
     /* this exists here just so we don't copy ifdef logic elsewhere */
     netsnmp_feature_require(string_append_int);
-    netsnmp_feature_require(interface_legacy)
+    netsnmp_feature_require(interface_legacy);
 #endif
     for (table = 0; table < NUM_ROUTE_SYMBOLS; table++) {
         auto_nlist(RTHASHSIZE_SYMBOL, (char *) &hashsize,
@@ -1192,8 +1192,8 @@ Route_Scan_Reload(void)
 #else
 
 #if HAVE_SYS_MBUF_H
-netsnmp_feature_require(string_append_int)
-netsnmp_feature_require(interface_legacy)
+netsnmp_feature_require(string_append_int);
+netsnmp_feature_require(interface_legacy);
 static void
 Route_Scan_Reload(void)
 {
