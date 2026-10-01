@@ -82,8 +82,8 @@ vyatta-snmp-vrf-agent: $(OBJS)
 install:
 	$(INSTALL) -m 0755 -d $(DESTDIR)/$(sbindir)
 	$(INSTALL) -m 0755 vyatta-snmp-vrf-agent $(DESTDIR)/$(sbindir)
-	$(INSTALL) -m 0755 -d $(DESTDIR)/lib/systemd/system/snmpd.service.d
-	$(INSTALL) -m 0644 vyatta-snmp-vrf-agent.conf $(DESTDIR)/lib/systemd/system/snmpd.service.d
+	$(INSTALL) -m 0755 -d $(DESTDIR)/usr/lib/systemd/system/snmpd.service.d
+	$(INSTALL) -m 0644 vyatta-snmp-vrf-agent.conf $(DESTDIR)/usr/lib/systemd/system/snmpd.service.d
 
 clean:
 	rm -f vyatta-snmp-vrf-agent $(OBJS) core
