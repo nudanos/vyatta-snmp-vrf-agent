@@ -1,3 +1,11 @@
+vyatta-snmp-vrf-agent (1.16) trixie; urgency=medium
+
+  * snmpd.service drop-in: pass the IP MIB exclusions on Debian's snmpd
+    command line; the DANOS unit's $TMP_OPTS options file does not exist and
+    the drop-in made snmpd fail to start.
+
+ -- NuDanOS Maintainers <jon@fernandez.tech>  Fri, 02 Oct 2026 18:41:22 -0700
+
 vyatta-snmp-vrf-agent (1.15) trixie; urgency=medium
 
   * Port to Debian 13 (trixie): debhelper-compat 13, Standards-Version 4.7.2, Rules-Requires-Root, NuDanOS Vcs.
